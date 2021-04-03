@@ -31,7 +31,7 @@ class Multi(Resource):
     def get(self,num):
         return {'result':num*10}
 
-api.add_resource(HelloWorld,'/')
+api.add_resource(HelloWorld,'/api')
 api.add_resource(Multi,'/multi/<int:num>')
 
 
